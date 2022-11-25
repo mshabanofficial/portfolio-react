@@ -1,0 +1,101 @@
+header{
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header-container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+.sha_h{
+    font-size: 3rem;
+    
+}
+
+.sha_h:hover{
+background: transparent;
+color: var(--color-primary);
+}
+
+/*==============CTA================*/
+
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/*==============Header Socials================*/
+
+.header_social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+.header_social::after{
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/*==============ME================*/
+
+.me{
+    width: 26%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    background: linear-gradient(45deg,transparent,var(--color-white),transparent);
+    display: grid;
+    place-items: center;
+    margin-left: 24rem;
+    margin-top: 3rem;
+
+    
+}
+.me:hover{
+    transform: scale(1.07);
+    transition: 1s ease-in-out;
+}
+
+
+
+/*==============scroll down================*/
+.scroll_down{
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+
+/*==============Media Queries(Medium Devices)====================*/
+
+@media screen and (max-width:1024px) {
+header{
+    height: 68vh;
+}
+}
+
+
+/*==============Media Queries(Medium Devices)====================*/
+
+@media screen and (max-width:1024px) {
+header{
+    height: 100vh;
+
+}
+.header_social,.scroll_down{
+    display: none;
+}
+}
